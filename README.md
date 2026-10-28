@@ -89,8 +89,6 @@ slr_intercept = std_reg.intercept_
 print("coefficint =", slr_coefficient)
 print("Y_intercept = ",slr_intercept)
 # Equation of the line
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 # y = 34.27 + 5.02 * X
 # Calculate the errors using RMSE
 from sklearn.metrics import mean_squared_error
@@ -235,8 +233,6 @@ Y_predict = rfc.predict(X_test)
 from sklearn.metrics import confusion_matrix, classification_report
 cm2 = confusion_matrix(Y_test, Y_predict)
 print('confusion matrix for RF classifier : \n',cm2)
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 score = rfc.score(X_test, Y_test)
 print('---------------------------------------------------')
 print('Random Forest classification report')
@@ -303,8 +299,6 @@ return np.sqrt(np.sum((p1-p2)**2))
 #Step 6: Creating Assign and Update Functions
 def assign_clusters(X, clusters):
 for idx in range(X.shape[0]):
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 dist = []
 curr_x = X[idx]
 for i in range(k):
@@ -339,8 +333,6 @@ clusters = assign_clusters(X, clusters)
 clusters = update_clusters(X, clusters)
 new_centers = [clusters[i]['center'] for i in range(k)]
 if np.allclose(old_centers, new_centers):
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 break
 pred = pred_cluster(X, clusters)
 #Step 9: Plotting Data Points with Predicted Cluster Centers
@@ -383,8 +375,6 @@ principal.fit(Scaled_data)
 x=principal.transform(Scaled_data)
 # Check the dimensions of data after PCA
 print("\n Dimension of data after applying PCA = " ,x.shape)
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 # Check the values of eigen vectors
 # prodeced by principal components
 print(principal.components_)
@@ -442,8 +432,6 @@ slp_model.summary()
 # 4. Train the model
 print("\nTraining SLP...")
 slp_model.fit(X_train, y_train, epochs=30, batch_size=32, verbose=1)
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 # 5. Evaluate the model
 loss, accuracy = slp_model.evaluate(X_test, y_test, verbose=0)
 print(f"\nSLP Test Loss: {loss:.4f}")
