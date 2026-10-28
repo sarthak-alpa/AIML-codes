@@ -41,8 +41,6 @@ Sample code: -
 import matplotlib.pyplot as plt
 # Sample coordinates
 months = ["Jan", "Feb", "Mar", "Apr"]
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 sales = [1200, 1500, 1300, 1900]
 # Build and customize a line plot
 plt.plot(months, sales, marker="o", color="blue", linestyle="--")
@@ -163,8 +161,6 @@ dtc = DecisionTreeClassifier(random_state=1234)
 dtc.fit(X_train, Y_train)
 # Test the model
 Y_predict = dtc.predict(X_test)
-Name- Sarthak S. Pendurkar
-Roll No- UST26L0101041
 # Evaluate the model
 from sklearn.metrics import confusion_matrix,classification_report
 cm = confusion_matrix(Y_test, Y_predict)
